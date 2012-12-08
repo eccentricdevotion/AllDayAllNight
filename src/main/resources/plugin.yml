@@ -1,0 +1,19 @@
+author: eccentric_nz
+softdepend: [Multiverse-Core]
+dev-url: http://dev.bukkit.org/server-mods/all-day-and-all-night/
+description: Make it always daytime! Can be configured per world, and the length and
+  time of day chosen.
+main: me.eccentric_nz.plugins.alldayallnight.AllDayAllNight
+name: AllDayAllNight
+startup: postworld
+version: '1.0'
+permissions:
+  alldayallnight.admin:
+    description: Allow player to change AllDayAllNight settings
+    default: op
+commands:
+  adan:
+    aliases: [alldayallnight]
+    description: Used to change AllDayAllNight settings
+    permissions: alldayallnight.admin
+    usage: /<command> [toggle|dawn|dusk|check_every] [world] [setting] e.g. /<command> toggle dayworld true

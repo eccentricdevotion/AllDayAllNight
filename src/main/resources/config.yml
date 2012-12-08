@@ -1,0 +1,7 @@
+# 0 is dawn/day, 6000 midday, 12000 dusk, 18000 midnight, 12500 night
+check_every: 1200
+worlds:
+  test:
+    enabled: true
+    dawn: 0
+    dusk: 12000
