@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 
 public class AllDayAllNightCommands implements CommandExecutor {
 
-    private AllDayAllNight plugin;
+    private final AllDayAllNight plugin;
 
     public AllDayAllNightCommands(AllDayAllNight plugin) {
         this.plugin = plugin;
@@ -22,6 +22,9 @@ public class AllDayAllNightCommands implements CommandExecutor {
             if (!sender.hasPermission("alldayallnight.admin")) {
                 sender.sendMessage(plugin.MY_PLUGIN_NAME + "You do not have permission to use this command!");
                 return true;
+            }
+            if (args.length < 1) {
+                return false;
             }
             if (args[0].equalsIgnoreCase("check_every")) {
                 Long time;

@@ -84,7 +84,7 @@ public class AllDayAllNight extends JavaPlugin {
         Set<String> worlds = getConfig().getConfigurationSection("worlds").getKeys(false);
         for (String w : worlds) {
             if (Bukkit.getServer().getWorld(w) != null && getConfig().getBoolean("worlds." + w + ".enabled")) {
-                System.out.println(MY_PLUGIN_NAME + "Enabling " + w + " for timed GameMode switching");
+                System.out.println(MY_PLUGIN_NAME + "Enabling " + w + " for switching");
                 list.add(getServer().getWorld(w));
             }
         }

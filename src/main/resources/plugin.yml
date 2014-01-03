@@ -1,6 +1,8 @@
 author: eccentric_nz
 softdepend: [Multiverse-Core]
-dev-url: http://dev.bukkit.org/server-mods/all-day-and-all-night/
+dev-url: http://dev.bukkit.org/bukkit-plugins/all-day-and-all-night/
+website: http://dev.bukkit.org/bukkit-plugins/all-day-and-all-night/
+url: http://dev.bukkit.org/bukkit-plugins/all-day-and-all-night/
 description: Make it always daytime or nighttime! Can be configured per world, and the length and
   time of day chosen.
 main: me.eccentric_nz.plugins.alldayallnight.AllDayAllNight
