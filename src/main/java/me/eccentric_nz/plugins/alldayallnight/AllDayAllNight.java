@@ -13,14 +13,9 @@ public class AllDayAllNight extends JavaPlugin {
     protected static AllDayAllNight plugin;
     public List<World> adanWorlds;
     public String MY_PLUGIN_NAME;
-    PluginManager pm = Bukkit.getServer().getPluginManager();
+    private final PluginManager pm = Bukkit.getServer().getPluginManager();
     private AllDayAllNightCommands commando;
     long repeat;
-
-    @Override
-    public void onDisable() {
-        saveConfig();
-    }
 
     @Override
     public void onEnable() {
@@ -28,6 +23,7 @@ public class AllDayAllNight extends JavaPlugin {
         MY_PLUGIN_NAME = "[AllDayAllNight] ";
         this.saveDefaultConfig();
         getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
+            @Override
             public void run() {
                 doWorldConfig();
                 adanWorlds = getWorlds();
@@ -38,6 +34,7 @@ public class AllDayAllNight extends JavaPlugin {
         }, 10L);
 
         getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+            @Override
             public void run() {
                 timechk();
             }

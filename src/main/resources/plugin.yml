@@ -8,7 +8,7 @@ description: Make it always daytime or nighttime! Can be configured per world, a
 main: me.eccentric_nz.plugins.alldayallnight.AllDayAllNight
 name: AllDayAllNight
 startup: postworld
-version: '1.0.1'
+version: '1.0.2'
 permissions:
   alldayallnight.admin:
     description: Allow player to change AllDayAllNight settings
