@@ -1,11 +1,12 @@
-package me.eccentric_nz.plugins.alldayallnight;
+package me.eccentric_nz.alldayallnight;
 
-import java.util.Set;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import java.util.Set;
 
 public class AllDayAllNightCommands implements CommandExecutor {
 

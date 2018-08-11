@@ -5,10 +5,11 @@ website: http://dev.bukkit.org/bukkit-plugins/all-day-and-all-night/
 url: http://dev.bukkit.org/bukkit-plugins/all-day-and-all-night/
 description: Make it always daytime or nighttime! Can be configured per world, and the length and
   time of day chosen.
-main: me.eccentric_nz.plugins.alldayallnight.AllDayAllNight
+main: me.eccentric_nz.alldayallnight.AllDayAllNight
 name: AllDayAllNight
 startup: postworld
-version: '1.0.2'
+version: 1.0.3
+api-version: 1.13
 permissions:
   alldayallnight.admin:
     description: Allow player to change AllDayAllNight settings

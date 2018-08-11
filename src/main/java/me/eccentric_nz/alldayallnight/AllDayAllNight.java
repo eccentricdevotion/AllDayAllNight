@@ -1,27 +1,28 @@
-package me.eccentric_nz.plugins.alldayallnight;
+package me.eccentric_nz.alldayallnight;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 public class AllDayAllNight extends JavaPlugin {
 
     protected static AllDayAllNight plugin;
+    private final PluginManager pm = Bukkit.getServer().getPluginManager();
     public List<World> adanWorlds;
     public String MY_PLUGIN_NAME;
-    private final PluginManager pm = Bukkit.getServer().getPluginManager();
-    private AllDayAllNightCommands commando;
     long repeat;
+    private AllDayAllNightCommands commando;
 
     @Override
     public void onEnable() {
         plugin = this;
         MY_PLUGIN_NAME = "[AllDayAllNight] ";
-        this.saveDefaultConfig();
+        saveDefaultConfig();
         getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
             @Override
             public void run() {
